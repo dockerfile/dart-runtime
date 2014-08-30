@@ -46,7 +46,7 @@ When building your application docker image, `ONBUILD` triggers install dependen
     docker build -t="app" .
 ```
 
-* **Step 3**: Run application by mapping port 8080:
+* **Step 3**: Run application by mapping port `8080`:
 
 ```sh
     APP=$(docker run -d -p 8080 app)
