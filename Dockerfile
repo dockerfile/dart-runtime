@@ -18,7 +18,7 @@ ONBUILD RUN pub get
 WORKDIR /app
 
 # Define default command.
-CMD ["dart", "/app/bin/server.dart"]
+CMD ["dart", "bin/server.dart"]
 
 # Expose ports.
 EXPOSE 8080
