@@ -32,7 +32,7 @@ This image assumes that your application:
 * has a file named `bin/server.dart` as the entrypoint script.
 * listens on port `8080`.
 
-When building your application docker image, `ONBUILD` triggers install dependencies of your application using `pub get`.
+When building your application docker image, `ONBUILD` triggers fetch the dependencies listed in `pubspec.yaml` and `pubspec.yaml` and cache them appropriatly using `pub get`.
 
 * **Step 1**: Create a Dockerfile in your `Dart` application directory with the following content:
 
